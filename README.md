@@ -12,7 +12,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Web Sales description
+Bloo Watch description
 
 ## ✍️ Directory Structure <a name = "dirStructure"></a>
 
