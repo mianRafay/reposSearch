@@ -1,0 +1,79 @@
+.error {
+    background-color: #ffe7e7;
+}
+.errorMsg {
+    color: red;
+}
+.dullBG {
+    // width: auto !important;
+    // background: #f1f1f1;
+    // margin-left: -24px !important;
+    // margin-right: -24px !important;
+    // padding: 0 25px !important;
+}
+.italic {
+    font-style: italic;
+}
+.btnIcon {
+    margin-left: -8px !important;
+    margin-right: -2px !important;
+    fill: #6b97b3e0;
+}
+.smallBtn {
+    margin: 0 auto !important;
+    margin-top: 10px !important;
+    max-width: 30px;
+    max-height: 30px;
+    // font-weight: lighter !important;
+    span {
+        font-size: 10px !important;
+    }
+}
+
+.bigBtn {
+    width: 286px;
+    font-weight: lighter !important;
+    border-radius: 30px !important;
+    margin-bottom: 10px !important;
+    margin-top: 30px !important;
+    height: 55px;
+    color: #fff !important;
+    background-color: #000 !important;
+    &:disabled {
+        background-color: #e2e2e2 !important;
+        color: #bbbbbb !important;
+        // opacity: 0.5;
+    }
+
+    span {
+        font-size: 22px !important;
+    }
+}
+.hr {
+    width: 100%;
+    margin-bottom: 0;
+    border-top: 1px solid #e2e2e2;
+}
+
+.centered {
+    text-align: center;
+}
+.dialogBG {
+    background-color: #f4fbf9 !important;
+}
+
+.marginTpBt {
+    margin: '30px 0' !important;
+}
+.mt10 {
+    margin: '10px 0' !important;
+}
+.bgWhiteBtn {
+    background: #fff !important;
+    border: 1px solid #e2e2e2 !important;
+}
+.smallBtn {
+    span {
+        font-size: 10px !important;
+    }
+}

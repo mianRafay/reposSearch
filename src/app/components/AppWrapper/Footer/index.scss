@@ -1,0 +1,32 @@
+.footer {
+    background: #fff;
+    padding: 10px !important;
+    > div > div {
+        .desc {
+            display: flex;
+            align-items: center;
+        }
+        .responsibility {
+            margin-top: 50px;
+        }
+        @media only screen and (max-width: 600px) {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .logo,
+            .responsibility {
+                width: 60%;
+                margin-bottom: 10px;
+            }
+            .desc {
+                width: 80%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    a {
+        color: #828282;
+        text-decoration: none !important;
+    }
+}

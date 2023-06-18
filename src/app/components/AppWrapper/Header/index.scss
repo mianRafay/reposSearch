@@ -1,0 +1,24 @@
+.appToolbar {
+    padding: 10px 0 10px 0;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    img {
+        cursor: pointer;
+    }
+    button {
+        height: 30px;
+        float: right !important;
+    }
+}
+.innerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    @media only screen and (max-width: 600px) {
+        div:first-child {
+            display: none;
+        }
+        grid-template-columns: 1fr 1fr;
+    }
+}

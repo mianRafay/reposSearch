@@ -1,0 +1,41 @@
+.dialogHeading {
+    // border-bottom: 1px #ddd solid;
+    h2 {
+        line-height: 30px;
+    }
+    .closeButton {
+        float: right;
+        svg {
+            width: 30px;
+            height: 30px;
+            font-size: 2rem;
+        }
+    }
+}
+.dialogContent {
+    // overflow: hidden !important;
+    padding: 20px;
+}
+
+.dialogActions {
+    // border-top: 1px #ddd solid;
+    padding: 10px;
+    button {
+        margin-right: 8px;
+        float: right;
+    }
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.error {
+    background-color: #fff7f9 !important;
+    background: #fff7f9 !important;
+}
+
+.success {
+    background-color: #f4fbf9 !important;
+    background: #f4fbf9 !important;
+}

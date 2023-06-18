@@ -1,0 +1,30 @@
+.content {
+    background: #2e8a9942;
+    padding: 30px 40px 200px 40px;
+    min-height: calc(100vh - 340px);
+    @media only screen and (max-width: 1024px) {
+        padding: 40px 10px !important;
+    }
+}
+.navbar {
+    height: 25px;
+    text-align: center;
+    background: #fff;
+    padding: 20px 0;
+    border-top: 1px solid #f1f1f1;
+    span {
+        float: left;
+        margin-top: -5px !important;
+    }
+    .navbarTitle {
+        color: #a9a9a9;
+        margin-right: 30px;
+    }
+    .backIcon {
+        color: #828282;
+        cursor: pointer;
+        :hover {
+            color: #000;
+        }
+    }
+}

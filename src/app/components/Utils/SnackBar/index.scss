@@ -1,0 +1,38 @@
+.action {
+    float: right;
+
+    .actionIcon {
+        margin-right: 5px;
+    }
+}
+
+.row {
+    cursor: pointer;
+}
+
+h2.header {
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+.overflowXauto {
+    overflow-x: auto;
+}
+
+.center {
+    margin-top: 1%;
+    color: #0000008a !important;
+    text-align: center;
+}
+
+.success {
+    background-color: #267b2f !important;
+}
+.error {
+    background-color: #ef4037 !important;
+}
+.warning {
+    background-color: #ffdf4a !important;
+}
+.info {
+    background-color: #1e95d6 !important;
+}

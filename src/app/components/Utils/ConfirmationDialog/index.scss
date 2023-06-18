@@ -1,0 +1,17 @@
+.dialogHeading {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    svg {
+        float: right;
+    }
+}
+.dialogContent {
+    margin-top: 20px;
+}
+.dialogActions {
+    justify-content: center !important;
+    padding: 15px !important;
+    button {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "target": "es5",
+        "jsx": "react",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": false,
+        "removeComments": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noImplicitAny": false,
+        "strict": true,
+        "outDir": "build",
+        "lib": ["es6", "es7", "dom"],
+        "baseUrl": "src",
+        "paths": {
+            "app/*": ["./app/*"],
+            "webSales/*": ["./app/websales/*"],
+            "selfService/*": ["./app/selfservice/*"],
+            "admin/*": ["./app/admin/*"]
+        }
+    },
+    "exclude": ["dist", "build", "node_modules"]
+}

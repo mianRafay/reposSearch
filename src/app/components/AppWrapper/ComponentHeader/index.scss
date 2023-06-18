@@ -1,0 +1,19 @@
+.header {
+    text-align: center;
+    // display: grid;
+    // grid-template-columns: 2fr 98fr;
+    div {
+        width: 20px;
+        color: #828282 !important;
+        cursor: pointer !important;
+        :hover {
+            color: #000;
+        }
+    }
+    h4 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px !important;
+        margin-right: 20px !important;
+    }
+}

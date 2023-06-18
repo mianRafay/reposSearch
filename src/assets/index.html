@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="title icon" id="favicon" href="" />
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <style>
+        /* input:disabled:hover {
+                cursor: not-allowed !important;
+            } */
+        html {
+            overflow-x: hidden;
+        }
+
+        body {
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .MuiFormControl-root,
+        .MuiFilledInput-root {
+            background: #fff !important;
+        }
+
+        /* .MuiFormControl-root label {
+                text-transform: uppercase;
+            } */
+        a {
+            cursor: pointer;
+        }
+
+        .MuiTypography-body1 {
+            line-height: 1.2 !important;
+        }
+
+        .MuiTableCell-root {
+            padding: 12px !important;
+        }
+
+        /* .MuiButton-root {
+                border-radius: 5px !important;
+            } */
+        .MuiButtonGroup-grouped {
+            border-radius: 5px !important;
+        }
+
+        .MuiButtonGroup-groupedHorizontal:not(:last-child) {
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+        }
+
+        .MuiButtonGroup-groupedHorizontal:last-child {
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+        }
+
+        .tooltip-ul {
+            padding-left: 12px !important;
+            margin: 0 0 10px 0;
+        }
+
+        input[type='color'] {
+            padding: 0 !important;
+            border: 0 !important;
+            height: 0 !important;
+            width: 0 !important;
+            background-color: #fff !important;
+            color: #fff !important;
+            border-width: 0 !important;
+            border-style: none !important;
+            border: 1px solid #fff;
+        }
+
+        input[type='number']::-webkit-inner-spin-button,
+        input[type='number']::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .MuiSelect-outlined.MuiSelect-outlined,
+        .MuiSelect-outlined.MuiSelect-outlined:active,
+        .MuiSelect-outlined.MuiSelect-outlined:focus {
+            background-color: transparent;
+            text-align: left;
+            font-family: sans-serif !important;
+            font-size: 14px !important;
+            font-weight: 400 !important;
+        }
+
+        .MuiFormControl-marginDense {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .MuiFormControlLabel-labelPlacementStart {
+            margin-left: 0 !important;
+        }
+
+        .MuiContainer-root {
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+        }
+
+        .seperator {
+            width: 100%;
+        }
+
+        .controls-wrapper {
+            width: 100%;
+        }
+
+        .carousel-wrapper {
+            width: 100%;
+        }
+
+        .rec.rec-slider-container {
+            overflow: visible;
+        }
+
+        .rec-carousel-item>div>div {
+            margin: 5px !important;
+        }
+
+        .rec-carousel-item:focus {
+            outline: none;
+        }
+
+        .rec-carousel .rec-arrow,
+        .rec-pagination {
+            display: none !important;
+        }
+
+        /* width */
+        /* ::-webkit-scrollbar {
+        width: 10px;
+      } */
+
+        /* Track */
+        /* ::-webkit-scrollbar-track {
+        background: #dddbdb;
+      } */
+
+        /* Handle */
+        /* ::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+      } */
+
+        /* Handle on hover */
+        /* ::-webkit-scrollbar-thumb:hover {
+        background: #c1c1c1;
+      } */
+    </style>
+</head>
+
+<body>
+    <div id="root" style=" overflow: hidden;"></div>
+</body>
+
+</html>
