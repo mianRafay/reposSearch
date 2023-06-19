@@ -1,21 +1,23 @@
 {
     "webbloom": {
-        "search": "Search",
-        "bookmark": "Bookmark",
-        "viewDetail": "View Detail",
-        "removeBookmark": "Remove",
-        "bookMarkLink":"Show Bookmarks",
-        "dashoardLink":"Go Back to Main Screen",
+        "general": {
+            "search": "Search",
+            "bookmark": "Bookmark",
+            "viewDetail": "View Detail",
+            "removeBookmark": "Remove",
+            "bookMarkLink": "Show Bookmarks",
+            "dashoardLink": "Go Back to Main Screen"
+        },
         "footer": {
             "desc": "Developed By Mian Abdur Rafay"
         },
-        "searchTable":{
-            "id":"ID",
-            "name":"Name",
-            "fullName":"Full Name",
-            "owner":"Owner",
-            "stars":"Stars",
-            "action":"Action"
+        "searchTable": {
+            "id": "ID",
+            "name": "Name",
+            "fullName": "Full Name",
+            "owner": "Owner",
+            "stars": "Stars",
+            "action": "Action"
         }
     }
 }
