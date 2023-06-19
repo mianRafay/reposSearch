@@ -38,7 +38,7 @@ To hit the DEV server use below links in **webpack.config.js** file
 
 
 ```
-master (Branch)
+main (Branch)
 ```
 
 ## ⛏️ Built Using <a name = "built_using"></a>
@@ -46,6 +46,7 @@ master (Branch)
 -   [ReactJs](#) - Web Framework
 -   [Redux](#) - State Management Tool
 -   [MaterialUI](#) - Material UI
+-   [ReactLocalization](#) - React Localization
 
 ## ✍️ Development Team <a name = "authors"></a>
 
