@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import CustomDataGrid from 'app/components/RepoList';
 import { GridCellParams, GridValueGetterParams } from '@mui/x-data-grid';
 import Button from '../Utils/Button';
+import useLocales from 'app/hooks/useLocales';
 
 function Favorites() {
     const [paginationModel, setPaginationModel] = useState({
@@ -14,6 +15,9 @@ function Favorites() {
     });
     const [favorites, setFavorites] = useState([]);
     const [totalCount, setTotalCount] = useState(0);
+    
+    const [searchTable] = useLocales('searchTable');
+    const [general] = useLocales('general');
 
     const handlePageChange = (params: any) => {
         const newPage = params.page;
@@ -44,7 +48,7 @@ function Favorites() {
                 <Grid container spacing={1}>
                     <Grid item sm={6} xs={12}>
                         <Button
-                            name="Remove"
+                            name={general.removeBookmark}
                             onClick={() => handleRemoveToFavorites(params)}
                             style={{ color: '#fff', width: '100%', top: '3px' }}
                         />
@@ -61,32 +65,32 @@ function Favorites() {
         );
     };
     const columns = [
-        { field: 'id', headerName: 'ID', minWidth: 90, flex: 1 },
-        { field: 'name', headerName: 'Name', minWidth: 180, flex: 1 },
-        { field: 'full_name', headerName: 'Full name', minWidth: 180, flex: 1 },
-        {
-            field: 'Owner Name',
-            headerName: 'Owner',
-            valueGetter: (params: GridValueGetterParams) => {
-                return params.row.owner.login;
-            },
-            minWidth: 180,
-            flex: 1,
-        },
-        {
-            field: 'stargazers_count',
-            headerName: 'Stars',
-            sortable: false,
-            minWidth: 180,
-            flex: 1,
-        },
-        {
-            field: 'Action',
-            headerName: 'Action',
-            minWidth: 180,
-            flex: 1,
-            renderCell: renderActionCell,
-        },
+      { field: 'id', headerName: searchTable.id, minWidth: 90, flex: 1 },
+      { field: 'name', headerName: searchTable.name, minWidth: 180, flex: 1 },
+      { field: 'full_name', headerName: searchTable.fullName, minWidth: 180, flex: 1 },
+      {
+          field: 'Owner Name',
+          headerName: searchTable.owner,
+          valueGetter: (params: GridValueGetterParams) => {
+              return params.row.owner.login;
+          },
+          minWidth: 180,
+          flex: 1,
+      },
+      {
+          field: 'stargazers_count',
+          headerName: searchTable.stars,
+          sortable: false,
+          minWidth: 50,
+          flex: 1,
+      },
+      {
+          field: 'Action',
+          headerName: searchTable.action,
+          minWidth: 180,
+          flex: 1,
+          renderCell: renderActionCell,
+      },
     ];
 
     return (
@@ -94,7 +98,7 @@ function Favorites() {
             {favorites.length > 0 && (
                 <Grid container spacing={1}>
                     <Grid item sm={12} xs={12}>
-                        <a href="/">Go Back to Main Screen</a>
+                        <a href="/">{general.dashoardLink}</a>
                     </Grid>
                     <CustomDataGrid
                         rows={favorites}

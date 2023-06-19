@@ -1,0 +1,23 @@
+{
+    "webbloom": {
+        "general": {
+            "search": "Buscar",
+            "bookmark": "Marcador",
+            "viewDetail": "Ver Detalle",
+            "removeBookmark": "Eliminar",
+            "bookMarkLink": "Mostrar marcadores",
+            "dashoardLink": "Vuelve a la pantalla principal"
+        },
+        "footer": {
+            "desc": "Desarrollado por Mian Abdur Rafay"
+        },
+        "searchTable": {
+            "id": "IDENTIFICACIÓN",
+            "name": "Nombre",
+            "fullName": "Nombre completo",
+            "owner": "Dueña",
+            "stars": "Estrellas",
+            "action": "Acción"
+        }
+    }
+}

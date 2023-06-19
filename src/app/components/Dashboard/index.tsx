@@ -12,6 +12,7 @@ import styles from './index.scss';
 import { GridCellParams, GridValueGetterParams } from '@mui/x-data-grid';
 import ErrorMessage from '../Utils/ErrorMessage';
 
+import useLocales from 'app/hooks/useLocales';
 import SimpleReactValidator from 'simple-react-validator';
 import { getValidations } from 'app/utils/common';
 
@@ -24,6 +25,9 @@ function Dashboard(props: IDashboardProps) {
         page: 0,
         pageSize: 10,
     });
+
+    const [searchTable] = useLocales('searchTable');
+    const [general] = useLocales('general');
     const [totalCount, setTotalCount] = useState(0);
 
     useEffect(() => {
@@ -76,7 +80,7 @@ function Dashboard(props: IDashboardProps) {
                 <Grid container spacing={1}>
                     <Grid item sm={6} xs={12}>
                         <Button
-                            name="Bookmark"
+                            name={general.bookmark}
                             onClick={() => handleAddToFavorites(params)}
                             style={{ color: '#fff', width: '100%', top: '3px' }}
                         ></Button>
@@ -94,12 +98,12 @@ function Dashboard(props: IDashboardProps) {
     };
 
     const columns = [
-        { field: 'id', headerName: 'ID', minWidth: 90, flex: 1 },
-        { field: 'name', headerName: 'Name', minWidth: 180, flex: 1 },
-        { field: 'full_name', headerName: 'Full name', minWidth: 180, flex: 1 },
+        { field: 'id', headerName: searchTable.id, minWidth: 90, flex: 1 },
+        { field: 'name', headerName: searchTable.name, minWidth: 180, flex: 1 },
+        { field: 'full_name', headerName: searchTable.fullName, minWidth: 180, flex: 1 },
         {
             field: 'Owner Name',
-            headerName: 'Owner',
+            headerName: searchTable.owner,
             valueGetter: (params: GridValueGetterParams) => {
                 return params.row.owner.login;
             },
@@ -108,14 +112,14 @@ function Dashboard(props: IDashboardProps) {
         },
         {
             field: 'stargazers_count',
-            headerName: 'Stars',
+            headerName: searchTable.stars,
             sortable: false,
             minWidth: 50,
             flex: 1,
         },
         {
             field: 'Action',
-            headerName: 'Action',
+            headerName: searchTable.action,
             minWidth: 180,
             flex: 1,
             renderCell: renderActionCell,
@@ -140,13 +144,13 @@ function Dashboard(props: IDashboardProps) {
                 </Grid>
                 <Grid item sm={4} xs={12}>
                     <Button
-                        name="Search"
+                        name={general.search}
                         onClick={handleSearchClick}
                         style={{ color: '#fff', width: '100%', top: '3px' }}
                     />
                 </Grid>
                 <Grid item sm={12} xs={12}>
-                    <a href="/favorites">Show Bookmarks</a>
+                    <a href="/favorites">{general.bookMarkLink}</a>
                 </Grid>
             </Grid>
             {repos.length > 0 && (

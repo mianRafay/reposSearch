@@ -3,9 +3,19 @@
         "search": "Search",
         "bookmark": "Bookmark",
         "viewDetail": "View Detail",
-        "removeBookmark": "Remove Bookmark",
+        "removeBookmark": "Remove",
+        "bookMarkLink":"Show Bookmarks",
+        "dashoardLink":"Go Back to Main Screen",
         "footer": {
-            "desc": "Developedn By Mian Abdur Rafay"
+            "desc": "Developed By Mian Abdur Rafay"
+        },
+        "searchTable":{
+            "id":"ID",
+            "name":"Name",
+            "fullName":"Full Name",
+            "owner":"Owner",
+            "stars":"Stars",
+            "action":"Action"
         }
     }
 }

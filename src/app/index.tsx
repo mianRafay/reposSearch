@@ -9,7 +9,7 @@ import AppWrapper from 'app/components/AppWrapper';
 
 let LocalizationStrings = new LocalizedStrings({
     en: {},
-    da: {},
+    es: {},
 });
 
 function setFaviconIcon(image) {
