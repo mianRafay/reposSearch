@@ -12,7 +12,9 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Bloo Watch description
+BlooWatch Assignment 
+
+I made this assignment as it is going to be a proect with the room of expansion. The project contains utility for maojor components such as Dialog, Snackbar and input field. Use of localstorage and redux is also present. 
 
 ## ✍️ Directory Structure <a name = "dirStructure"></a>
 
