@@ -6,7 +6,7 @@ const useLocales = (localeKey: string, section?: string) => {
     const { locales } = useSelector((state: any) => state?.locales ?? {});
 
     useEffect(() => {
-        section = section ?? 'webSales';
+        section = section ?? 'webbloom';
         if (locales && locales[section]) {
             const loc = locales[section][localeKey];
             if (loc) {

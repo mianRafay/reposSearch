@@ -2,8 +2,6 @@ import axios from 'axios';
 import $ from 'jquery';
 import store from 'app/store';
 import { ThemeTypes } from 'app/constants/action-types';
-import { getTitleSite } from 'app/utils/common';
-import { EndPoints } from './endPoints';
 
 export const authToken = 'Kz1c1tWYDDfWqjAI18Kn3bLRQugUXLB7yU4Qxopp';
 export class HttpClient {
@@ -44,12 +42,8 @@ export class HttpClient {
                 payload: { show: true, message: response?.data?.message ?? error.message, type: 'error' },
             });
         } else {
-            const data = response.data;
-          
-
             if (response.status != 200 && (response.status !== 0)) {
-                let msg = `api request ${this.req} to endpoint ${this.url} failed with message: '${message}'`;
-                console.log('error', msg);
+                let msg = `api request ${this.req} to endpoint ${this.url} failed with message`;
                 let show = true;
 
                 store.dispatch({

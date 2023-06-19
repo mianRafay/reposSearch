@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { toggleSnackbar } from 'app/actions';
 import { connect } from 'react-redux';
 import { searchRepositories } from 'app/actions';
@@ -10,8 +10,13 @@ import Button from 'app/components/Utils/Button';
 import CustomDataGrid from 'app/components/RepoList';
 import styles from './index.scss';
 import { GridCellParams, GridValueGetterParams } from '@mui/x-data-grid';
+import ErrorMessage from '../Utils/ErrorMessage';
+
+import SimpleReactValidator from 'simple-react-validator';
+import { getValidations } from 'app/utils/common';
 
 function Dashboard(props: IDashboardProps) {
+    const validator = useRef(new SimpleReactValidator({ ...getValidations() }));
     const [repos, setRepos] = useState<IGitSearch[]>([]);
     const [searchQuery, setSearchQuery] = useState('');
     const { searchRepositories } = props;
@@ -77,11 +82,11 @@ function Dashboard(props: IDashboardProps) {
                         ></Button>
                     </Grid>
                     <Grid item sm={6} xs={12}>
-                        <Button
+                        {/* <Button
                             name="View Detail"
                             onClick={() => handleAddToFavorites(params)}
                             style={{ color: '#fff', width: '100%', top: '3px' }}
-                        ></Button>
+                        ></Button> */}
                     </Grid>
                 </Grid>
             </>
@@ -129,7 +134,9 @@ function Dashboard(props: IDashboardProps) {
                         onChange={e => {
                             setSearchQuery(e.target.value);
                         }}
+                        required
                     />
+                    <ErrorMessage validator={validator} value={searchQuery} label="Search Query" />
                 </Grid>
                 <Grid item sm={4} xs={12}>
                     <Button

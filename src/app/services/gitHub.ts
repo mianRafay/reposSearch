@@ -1,4 +1,3 @@
-import { IServiceResponse } from 'app/interfaces/common/IServiceResponse';
 import { EndPoints, GitHubEndpoints } from './http';
 import httpClient from './http/httpClient';
 import { AxiosResponse } from 'axios';

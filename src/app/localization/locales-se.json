@@ -1,0 +1,11 @@
+{
+    "webbloom": {
+        "search": "Buscar",
+        "bookmark": "Marcador",
+        "viewDetail": "Ver Detalle",
+        "removeBookmark": "Eliminar marcador",
+        "footer": {
+            "desc": "Desarrollado por Mian Abdur Rafay"
+        }
+    }
+}
