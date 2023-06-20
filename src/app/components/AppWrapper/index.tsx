@@ -1,5 +1,5 @@
 import React from 'react';
-import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
+import {MuiThemeProvider, createTheme   } from '@material-ui/core/styles';
 import Header from 'app/components/AppWrapper/Header';
 import Routes from 'app/routes';
 import { Container } from '@material-ui/core';
