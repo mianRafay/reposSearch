@@ -7,8 +7,9 @@ import CustomDataGrid from 'app/components/RepoList';
 import { GridCellParams, GridValueGetterParams } from '@mui/x-data-grid';
 import Button from '../Utils/Button';
 import useLocales from 'app/hooks/useLocales';
+import { IFavoritesProps } from './IFavoritesProps';
 
-function Favorites() {
+function Favorites(props: IFavoritesProps) {
     const [paginationModel, setPaginationModel] = useState({
         page: 0,
         pageSize: 10,
@@ -40,6 +41,11 @@ function Favorites() {
         const isExist = favorites.filter((e: any) => e.id !== params.row.id);
         localStorage.setItem('favorites', JSON.stringify(isExist));
         setFavorites(isExist);
+        props.toggleSnackbar({
+            show: true,
+            message: `Removed from Bookmarks`,
+            type: 'success',
+        });
     };
 
     const renderActionCell = (params: GridCellParams) => {

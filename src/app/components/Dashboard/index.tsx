@@ -71,6 +71,17 @@ function Dashboard(props: IDashboardProps) {
         if (!isExist) {
             favorites.push(params.row);
             localStorage.setItem('favorites', JSON.stringify(favorites));
+            props.toggleSnackbar({
+                show: true,
+                message: `Successfully,included in Bookmarks`,
+                type: 'success',
+            });
+        }else{
+           props.toggleSnackbar({
+                show: true,
+                message: `Already included in Bookmarks`,
+                type: 'error',
+            });
         }
     };
 
