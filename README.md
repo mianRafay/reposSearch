@@ -33,7 +33,7 @@ you must have access to the repository from where you can clone the project and 
 To hit the DEV server use below links in **webpack.config.js** file
 
 ##  Commands to RUN <a name = "commands_to_run"></a>
- - npm install
+ - npm i --force
  - npm run start
 
 ## 🚀 Deployment <a name = "deployment"></a>
