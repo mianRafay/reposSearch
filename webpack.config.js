@@ -6,7 +6,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = (env, argv) => {
     const isProduction = argv.mode === 'production';
     const sourcePath = path.join(__dirname, './src');
-    const outPath = path.join(__dirname, './dist');
+    const outPath = path.join(__dirname, './public');
 
     const plugins = [
         new MiniCssExtractPlugin({
