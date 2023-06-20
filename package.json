@@ -11,7 +11,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "cross-env NODE_ENV=dev webpack-dev-server --mode development --hot --progress --color --port 4000 --open",
-        "build": "cross-env NODE_ENV=dev webpack -p --progress --colors",
+        "build": "cross-env NODE_ENV=dev webpack --progress",
         "format": "prettier --write \"src/**/*.{ts,tsx,scss}\""
     },
     "license": "MIT",
